@@ -1,10 +1,10 @@
 body {
 	margin: 0px;
-	background-color: rgb(13, 17, 23);
+	background-color: rgb(32, 37, 44);
 }
 
 * {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .title-icon {
@@ -17,7 +17,7 @@ body {
 }
 
 .title h5 {
-	color: rgb(200,200,200);
+	color: rgb(240, 240, 240);
 	font-size: 30px;
     text-shadow: 0 0 3px rgb(20,20,20), 0 0 5px rgb(20,20,100); 
 	margin: 10px;
@@ -47,20 +47,20 @@ body {
 }
 
 .nav-menu .button {
-	margin-left: 20px;
-	margin-right: 20px;
-	height: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 12px;
 
 	position: relative;
 }
 
 .nav-menu .button-link {
-	background-color: rgb(120,120,120);
-	border: 3px solid rgb(80,80,80);
+	background-color: rgba(22, 27, 34);
+	border: 3px solid rgba(22, 27, 34);
 	padding: 5px 20px;
 
 	text-decoration: none;
-	color: rgb(20,20,20);
+	color: rgb(255, 255, 255);
 
 	transition-duration: 0.25s;
 }
@@ -76,16 +76,16 @@ body {
 	z-index: 1;
 
     animation: fadein 0.2s;
-	border: 3px solid rgb(80,80,80);
+	border: 3px solid rgba(80, 80, 80, 0);
 
-	background-color: rgb(120,120,120);
+	background-color: rgb(0, 0, 0);
 	display: none;
 }
 
 .nav-menu .dropdown-content a {
 	display: block;
 	text-decoration: none;
-	color: rgb(20,20,20);
+	color: rgb(255, 255, 255);
 
 	padding-left: 20px;
 	padding-right: 20px;
@@ -117,25 +117,26 @@ body {
 	border-radius: 10px;
 	width: 800px;
 
-	color: rgb(200,200,200);
-	background-color: rgb(46,46,46);
-	box-shadow: 0 0 10px rgb(60,60,60);
+	color: rgb(255, 255, 255);
+	background-color: rgb(32, 37, 44);
+	box-shadow: 0 0 10px rgb(0, 0, 0);
 }
+
 .page .button {
-	margin-left: 20px;
-	margin-right: 20px;
-	height: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 12px;
 
 	position: relative;
 }
 
 .page .button-link {
-	background-color: rgb(120,120,120);
-	border: 3px solid rgb(80,80,80);
+	background-color: rgba(22, 27, 34);
+	border: 3px solid rgba(22, 27, 34);
 	padding: 5px 20px;
 
 	text-decoration: none;
-	color: rgb(10, 9, 9);
+	color: rgb(255, 255, 255);
 
 	transition-duration: 0.25s;
 }
@@ -151,16 +152,16 @@ body {
 	z-index: 1;
 
     animation: fadein 0.2s;
-	border: 3px solid rgb(80,80,80);
+	border: 3px solid rgba(80, 80, 80, 0);
 
-	background-color: rgb(120,120,120);
+	background-color: rgb(0, 0, 0);
 	display: none;
 }
 
 .page .dropdown-content a {
 	display: block;
 	text-decoration: none;
-	color: rgb(20,20,20);
+	color: rgb(255, 255, 255);
 
 	padding-left: 20px;
 	padding-right: 20px;
@@ -180,7 +181,7 @@ body {
 	background-color: rgb(80,80,80);
 }
 
-.content div:target {
+.page div:target {
 	margin-left: 10px;
 }
 
@@ -188,7 +189,7 @@ body {
 	margin-top: 0.25em;
 	margin-bottom: 0.75em;
 	margin-left: 5px;
-	color: rgb(170,170,170);
+	color: rgb(255, 255, 255);
 }
 
 .content h3 {
