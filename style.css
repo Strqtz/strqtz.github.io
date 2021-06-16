@@ -131,8 +131,8 @@ body {
 }
 
 .page .button-link {
-	background-color: rgba(22, 27, 34);
-	border: 3px solid rgba(22, 27, 34);
+	background-color: rgb(22, 27, 34);
+	border: 3px solid rgb(22, 27, 34);
 	padding: 5px 20px;
 
 	text-decoration: none;
@@ -152,7 +152,7 @@ body {
 	z-index: 1;
 
     animation: fadein 0.2s;
-	border: 3px solid rgba(80, 80, 80, 0);
+	border: 3px solid rgb(80, 80, 80, 0);
 
 	background-color: rgb(0, 0, 0);
 	display: none;
