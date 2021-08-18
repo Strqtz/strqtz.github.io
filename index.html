@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="./src/style.css">
-    <link rel="icon" href="./src/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strqtz's Website where you can find my mods and plugins">
+    <meta name="keywords" content="Strqtz, Minecraft, Hypixel, Website">
+    <link rel="icon" href="./src/img/favicon-32x32.png">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     <title>Strqtz's Website</title>
 </head>
 <body>
-    <div class="header">
-    <img class="title-icon" src="./src/icon.png">
-    <div class="title">
-        <h5>Strqtz's Website</h5>
-    </div>
-    <div class="nav-menu">
-        <div class="button">
-            <a class="button-link" href="./index.html">Home</a>
-        </div>
-        <div class="button">
-            <a class="button-link" href="./minecraftmods.html">Minecraft Mods</a>
-            <div class="dropdown-content">
-                <a href="./skyblockmodules.html">Skyblock Modules</a>
-            </div>
-        </div>
-        <div class="button">
-            <a class="button-link" href="./contact.html">Contact</a>
-        </div> 
-    </div>
-</div>
-<div class="page">
-		<div class="content">
-        <p>Welcome to my Website</p>
-        <p>This is where I showcase my mods, plugins and more.</p>
-        <p>Thank you for visiting!</p>
-		</div>
-	</div>
+    <section class="centered">
+        <h1 data-aos="fade-right">Strqtz's Website</h1>
+        <a href="https://github.com/Strqtz">
+            <button1><img src="src/img/github.png" alt="github"width="64" height="64"></button1>
+        </a>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init(
+        {
+            once: false,
+            mirror: true,
+            anchorPlacement: 'top-bottom',
+            offset: 0,
+            duration: 800
+        });</script>
 </body>
 </html>
