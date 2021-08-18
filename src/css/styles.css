@@ -17,10 +17,9 @@ body{
     background-color: rgb(0,0,0);
 }
 
-.button1{
+.custombutton{
     border: none;
     border-radius: 50%;
-    float: left;
     color: rgb(20,20,20);
     background-color: rgb(0,0,0);
     padding: 15px 32px;
@@ -28,8 +27,9 @@ body{
     transition-duration: 0.4s;
 }
 
-.button1:hover {
-    background-color: rgb(80, 80, 80)
+.custombutton:disabled {
+    opacity: 50;
+    cursor: not-allowed;
 }
 
 h1{
