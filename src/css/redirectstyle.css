@@ -1,0 +1,88 @@
+html {
+
+    background-color: rgb(0,0,0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 5vh;
+    scroll-behavior: smooth;
+    }
+    .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+    body{
+    background-color: rgb(0,0,0);
+    align-items: left;
+
+    }
+
+    a{
+    background-color: rgb(0,0,0);
+    }
+    .custombutton{
+    border: none;
+    border-radius: 50%;
+    align-items: left;
+    position: left;
+    color: rgb(20,20,20);
+    background-color: rgb(0,0,0);
+    cursor: wait;
+    transition-duration: 0.4s;
+    }
+
+    h1{
+        position: absolute;
+        font-size: 6vh;
+        top: 40%;
+        left: 42%;
+        color: rgb(255, 255, 255);
+    }
+
+    .loader>span {
+        width: 15px;
+        height: 15px;
+        display: block;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 5px;
+      }
+      
+      .loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .dot-1 {
+        animation: anim 1s linear 0s infinite;
+      }
+      
+      .dot-2 {
+        animation: anim 1s linear 0.25s infinite;
+      }
+      
+      .dot-3 {
+        animation: anim 1s linear 0.50s infinite;
+      }
+      
+      .dot-4 {
+        animation: anim 1s linear 0.75s infinite;
+      }
+      
+      @keyframes anim {
+        0% {
+          top: 0;
+        }
+      
+        50% {
+          top: 15px;
+        }
+      
+        100% {
+          top: 0;
+        }
+      }
