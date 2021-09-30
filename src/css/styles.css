@@ -13,6 +13,31 @@ html {
     align-items: center;
     min-height: 100vh;
 }
+.row {
+    display: grid;
+    grid-template-areas: "button1 button2 button3"
+                         "button4 button5 button5";
+    grid-gap: 5px;
+}
+.grid-item:nth-child(1) {
+    grid-area: button1;
+}
+.grid-item:nth-child(2) {
+    grid-area: button2;
+}
+.grid-item:nth-child(3) {
+    grid-area: button3;
+}
+.grid-item:nth-child(4) {
+    grid-area: button4;
+}
+.grid-item:nth-child(5) {
+    grid-area: button5;
+}
+.grid-item:nth-child(6) {
+    grid-area: button6;
+}
+
 body{
     background-color: rgb(0,0,0);
     align-items: left;
@@ -25,9 +50,9 @@ a{
 .custombutton{
     border: none;
     border-radius: 50%;
-    align-items: left;
-    position: left;
-    color: rgb(20,20,20);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 8vw;
     background-color: rgb(0,0,0);
     cursor: wait;
     transition-duration: 0.4s;

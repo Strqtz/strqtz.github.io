@@ -35,9 +35,9 @@ html {
 
     h1{
         position: absolute;
+        align-items: center;
         font-size: 6vh;
         top: 40%;
-        left: 42%;
         color: rgb(255, 255, 255);
     }
 
