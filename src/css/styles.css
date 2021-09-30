@@ -37,6 +37,14 @@ html {
 .grid-item:nth-child(6) {
     grid-area: button6;
 }
+.logo {
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 body{
     background-color: rgb(0,0,0);
