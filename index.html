@@ -15,29 +15,23 @@
 <body>
     <section class="centered">
         <h1 c="animate__animated animate__bounce">Strqtz's Website</h1>
-        <section class="row">
-            <div class="grid-item">
-                <div class="logo">
-                    <a data-aos="fade-up" href="https://github.com/Strqtz">
-                        <custombutton><img src="src/img/github.png" alt="github"width="64" height="64"></custombutton>
-                    </a>
-                </div>
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
             </div>
-            <div class="grid-item">
-                <div class="logo">
-                    <a data-aos="fade-up" href="https://twitch.tv/strqtz_">
-                        <custombutton><img src="src/img/twitch.png" alt="twitch"width="64" height="64"></custombutton>
-                    </a>
-                </div>  
-            </div>
-            <div class="grid-item">
-                <div class="logo">
-                    <a data-aos="fade-up" href="https://youtube.com/channel/UCLxv3Z1PaaceeqWMQhTurJw">
-                        <custombutton><img src="src/img/youtube.png" alt="youtube"width="64" height="64"></custombutton>
-                    </a>
-                </div>
-            </div>
-        </section>        
+
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <button onclick="openNav()">open</button>
     </section>
 
 
@@ -50,5 +44,14 @@
             offset: 0,
             duration: 800
         });</script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 </html>

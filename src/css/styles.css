@@ -13,39 +13,56 @@ html {
     align-items: center;
     min-height: 100vh;
 }
-.row {
-    display: grid;
-    grid-template-areas: "button1 button2 button3"
-                         "button4 button5 button5";
-    grid-gap: 5px;
-}
-.grid-item:nth-child(1) {
-    grid-area: button1;
-}
-.grid-item:nth-child(2) {
-    grid-area: button2;
-}
-.grid-item:nth-child(3) {
-    grid-area: button3;
-}
-.grid-item:nth-child(4) {
-    grid-area: button4;
-}
-.grid-item:nth-child(5) {
-    grid-area: button5;
-}
-.grid-item:nth-child(6) {
-    grid-area: button6;
-}
-.logo {
-    transition: all 0.2s ease-in-out;
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
-.logo:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
 body{
     background-color: rgb(0,0,0);
     align-items: left;
