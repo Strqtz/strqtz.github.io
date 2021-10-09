@@ -11,7 +11,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 .overlay {
     height: 100%;
@@ -49,8 +49,9 @@ html {
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    padding: 0px;
+    top: 0px;
+    right: 15px;
     font-size: 60px;
 }
 
@@ -63,15 +64,35 @@ html {
         right: 35px;
     }
 }
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a.lefticon {
+    float: left;
+    padding: 0px 0px;
+}
+
+.topnav a.icon {
+    float: right;
+}
+
+.topnav a:hover {
+    transform: scale(1.1);
+}
 body{
     background-color: rgb(0,0,0);
-    align-items: left;
-
 }
 
-a{
-    background-color: rgb(0,0,0);
-}
 .custombutton{
     border: none;
     border-radius: 50%;

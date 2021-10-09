@@ -8,31 +8,38 @@
     <meta name="keywords" content="Strqtz, Minecraft, Hypixel, Website">
     <link rel="icon" href="./src/img/favicon-32x32.png">
     <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/2642600894.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Strqtz's Website</title>
 </head>
 <body>
-    <section class="centered">
-        <h1 c="animate__animated animate__bounce">Strqtz's Website</h1>
-        <div id="myNav" class="overlay">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
         </div>
 
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <button onclick="openNav()">open</button>
+    </div>
+    <div class="topnav">
+        <a href="#" class="lefticon">
+            <img src="src/img/icon.png" height="50" width="50" class="lefticon">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <i class="fa fa-bars" style="color: #f1f1f1"></i>
+    </a>
+    </div>
+
+
+    <section class="centered">
+        <h1 c="animate__animated animate__bounce">Strqtz's Website</h1>
     </section>
+
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
