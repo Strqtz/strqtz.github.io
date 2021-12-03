@@ -1,7 +1,7 @@
 site_name: SBM Docs
-site_url: https://strqtz.github.io/skyblockmodules/
+site_url: https://strqtz.codes/skyblockmodules/
 site_author: Strqtz
-docs_dir: skyblockmodules/docs
+docs_dir: skyblockmodulesdocs/docs
 theme:
   logo: assets/logo.png
   favicon: assets/logo.png
@@ -25,6 +25,8 @@ extra:
       link: https://twitter.com/Strqtz_
     - icon: fontawesome/brands/github
       link: https://github.com/Strqtz
+    - icon: fontawesome/solid/globe-asia
+      link: https://strqtz.codes
 markdown_extensions:
   - pymdownx.critic
   - pymdownx.caret
