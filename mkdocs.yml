@@ -26,7 +26,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Strqtz
     - icon: fontawesome/solid/globe-asia
-      link: https://strqtz.codes
+      link: https://www.strqtz.codes
 markdown_extensions:
   - pymdownx.critic
   - pymdownx.caret
