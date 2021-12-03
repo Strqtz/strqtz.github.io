@@ -1,4 +1,7 @@
 [data-md-color-scheme="sbm"] {
+--md-default-fg-color: #F1EBE6;
+--md-default-fg-color--light: #F1EBE6;
+--md-default-bg-color: #303443;
   --md-primary-fg-color: #f58367; 
   --md-primary-bg-color: #f1f0e6; 
   --md-accent-fg-color: #f1f0e6;
@@ -10,7 +13,7 @@
     --md-code-hl-constant-color: #54575f;
     --md-code-hl-keyword-color: #54575f;
     --md-code-hl-string-color: #54575f;
-    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-name-color: #f1f0e6;
     --md-code-hl-operator-color: #54575f;
     --md-code-hl-punctuation-color: #54575f;
     --md-code-hl-comment-color: #54575f;
