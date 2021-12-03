@@ -1,7 +1,7 @@
 [data-md-color-scheme="sbm"] {
 --md-default-fg-color: #F1EBE6;
 --md-default-fg-color--light: #F1EBE6;
---md-default-bg-color: #303443;
+--md-default-bg-color: #212529;
   --md-primary-fg-color: #f58367; 
   --md-primary-bg-color: #f1f0e6; 
   --md-accent-fg-color: #f1f0e6;
@@ -20,6 +20,6 @@
     --md-code-hl-generic-color: #cf5656;
     --md-code-hl-variable-color: #cf5656;
     --md-code-fg-color: #f1f0e6;
-    --md-code-bg-color: #3a3c47;
+    --md-code-bg-color: #040506;
     --md-code-hl-color: #f58367;
 }
