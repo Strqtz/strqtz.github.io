@@ -92,6 +92,28 @@ html {
 body{
     background-color: rgb(0,0,0);
 }
+.typing-demo {
+    width: 13ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f1f1f1;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
 
 .custombutton{
     border: none;
