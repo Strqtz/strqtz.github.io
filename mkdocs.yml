@@ -2,21 +2,27 @@ site_name: SBM Docs
 site_url: https://strqtz.codes/skyblockmodules/
 site_author: Strqtz
 docs_dir: skyblockmodulesdocs/docs
+repo_url: https://github.com/Strqtz/SkyblockModules
+repo_name: Strqtz/SkyblockModules
 theme:
   logo: assets/logo.png
   favicon: assets/logo.png
   name: material
+  icon: 
+    repo: fontawesome/brands/github
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: sbm
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
   features:
     - content.code.annotate 
+    - search.share
+    - search.highlight
 extra_css:
    - stylesheets/extra.css
 extra:
@@ -37,3 +43,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
+  - pymdownx.betterem
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true 
