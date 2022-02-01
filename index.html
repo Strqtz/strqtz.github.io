@@ -16,30 +16,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Strqtz's Website where you can find my mods and plugins">
     <meta name="keywords" content="Strqtz, Minecraft, Hypixel, Website">
-    <link rel="icon" href="./src/img/favicon-32x32.png">
+    <link rel="icon" href="src/img/favicon-32x32.png">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/2642600894.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/perspective.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css"/>
     <title>Strqtz's Website</title>
 </head>
 <body>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <div class="overlay-content">
-            <a href="./skyblockmodules/">Skyblock Modules</a>
-        </div>
-
-    </div>
-    <div class="topnav">
-        <a href="#" class="lefticon">
-            <img src="src/img/icon.png" height="50" width="50" class="lefticon">
-        </a>
-        <a href="javascript:void(0);" class="icon" onclick="openNav()">
-        <i class="fa fa-bars" style="color: #f1f1f1"></i>
+<div class="topnav" id="topNav">
+    <a class="active" href="">Home</a>
+    <a href="skyblockmodules/index.html">Skyblock Modules</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
     </a>
-    </div>
+</div>
 
 
     <section class="centered">
@@ -61,13 +58,81 @@
             duration: 800
         });</script>
     <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
+        function openMenu() {
+            var x = document.getElementById("topNav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
+<script>
+    function myFunction() {
+        <meta http-equiv="refresh" content="5; URL=https://github.com/Strqtz" />
+    }
+</script>
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section aboutme">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Strqtz. I'm a <span>Java</span> and <span>JavaScript</span> developer with over a year of experience.
+            </p>
+        </div>
+        <div class="footer-section links">
+            <h2>Links</h2>
+            <a href="tos.html">Terms of Service</a>
+        </div>
+        <div class="footer-section socials">
+            <h2>Socials</h2>
+            <button class="button1" id="githubButton">
+                <a href="https://github.com/Strqtz">
+                    <img src="src/img/github.png" alt="github" width="32" height="32">
+                </a>
+
+            </button>
+            <button class="button2" id="discordButton"><img src="src/img/discord.png" width="40.1192" height="32"></button>
+            <button class="button3" id="youtubeButton">
+                <a href="https://github.com/Strqtz">
+                    <img src="src/img/youtube.png" alt="youtube" width="39.546" height="35.1">
+                </a>
+
+            </button>
+            <button class="button1" id="twitchButton">
+                <a href="https://twitch.tv/strqtz_">
+                    <img src="src/img/twitch.png" alt="twitch" width="32" height="32">
+                </a>
+            </button>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; strqtz.codes • Designed by Strqtz
+    </div>
+</div>
+
+<script>
+    tippy('#discordButton', {
+        content: 'Strqtz#9972',
+        theme: 'translucent',
+        animation: 'perspective'
+    });
+    tippy('#githubButton', {
+        content: 'Github',
+        theme: 'translucent',
+        animation: 'perspective'
+    });
+    tippy('#youtubeButton', {
+        content: 'Youtube',
+        theme: 'translucent',
+        animation: 'perspective'
+    });
+    tippy('#twitchButton', {
+        content: 'Twitch',
+        theme: 'translucent',
+        animation: 'perspective'
+    });
+</script>
 </body>
 </html>
