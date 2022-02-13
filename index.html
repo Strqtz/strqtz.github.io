@@ -19,20 +19,33 @@
     <link rel="icon" href="src/img/favicon-32x32.png">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2642600894.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="src/js/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/perspective.css"/>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css"/>
     <title>Strqtz's Website</title>
 </head>
 <body>
+
+<script>
+    $(window).on("pageshow", function () {
+        // const frag = new URLSearchParams(window.location.hash.slice(1));
+        const code = window.location.toString().split(/[^\w0-9\/:]/g)[2];
+
+        handleOAuthRedirectRequest(window.location.toString());
+    });
+</script>
+
 <div class="topnav" id="topNav">
     <a class="active" href="">Home</a>
-    <a href="skyblockmodules/index.html">Skyblock Modules</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="skyblockmodules/index">Skyblock Modules</a>
     <a href="javascript:void(0);" class="icon" onclick="openMenu()">
         <i class="fa fa-bars"></i>
     </a>
@@ -57,21 +70,6 @@
             offset: 0,
             duration: 800
         });</script>
-    <script>
-        function openMenu() {
-            var x = document.getElementById("topNav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-<script>
-    function myFunction() {
-        <meta http-equiv="refresh" content="5; URL=https://github.com/Strqtz" />
-    }
-</script>
 
 <div class="footer">
     <div class="footer-content">
@@ -95,7 +93,7 @@
             </button>
             <button class="button2" id="discordButton"><img src="src/img/discord.png" width="40.1192" height="32"></button>
             <button class="button3" id="youtubeButton">
-                <a href="https://github.com/Strqtz">
+                <a href="https://www.youtube.com/channel/UCLxv3Z1PaaceeqWMQhTurJw">
                     <img src="src/img/youtube.png" alt="youtube" width="39.546" height="35.1">
                 </a>
 
@@ -134,5 +132,6 @@
         animation: 'perspective'
     });
 </script>
+
 </body>
 </html>
